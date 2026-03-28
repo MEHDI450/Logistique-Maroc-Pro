@@ -1,0 +1,17 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - public/electron.js
+extraMetadata:
+  main: build/electron.js
+appId: com.logistique.maroc
+productName: Logistique Maroc Pro
+win:
+  target: nsis
+  icon: public/favicon.ico
+extends: react-cra
+electronVersion: 28.1.0
